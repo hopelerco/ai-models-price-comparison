@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparador de Costos: Gemini vs Claude vs OpenAI</title>
+    <title>Comparador de Costos: Gemini vs Claude vs OpenAI | Hopeler</title>
     <!-- Tailwind CSS para diseño moderno -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts (Inter) -->
@@ -31,13 +31,34 @@
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
 
-    <div class="max-w-6xl mx-auto px-4 py-8">
+    <div class="max-w-6xl mx-auto px-4 py-6">
         
+        <!-- Barra de Navegación de la Empresa (Hopeler) -->
+        <nav class="bg-white border border-slate-200/80 py-3.5 px-6 mb-8 rounded-2xl shadow-sm flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- SVG Logo Hopeler: Elegante, minimalista y tecnológico -->
+                <svg class="w-9 h-9" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="hopeler-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#06B6D4" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="32" height="32" rx="8" fill="url(#hopeler-bg-grad)"/>
+                    <path d="M10 8V24M22 8V24M10 16H22" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M13 11L16 8L19 11" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                    <span class="text-2xl font-black tracking-tight text-slate-900 bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-indigo-950 to-indigo-900">Hopeler</span>
+                </div>
+            </div>
+        </nav>
+
         <!-- Encabezado Principal -->
         <header class="mb-8 text-center md:text-left md:flex md:items-center md:justify-between border-b border-slate-200 pb-6">
             <div>
-                <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight flex items-center justify-center md:justify-start gap-2">
-                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-3 py-1 rounded-lg text-2xl shadow-sm">VS</span>
+                <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center justify-center md:justify-start gap-2">
+                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-2.5 py-0.5 rounded-lg text-lg md:text-xl shadow-sm">VS</span>
                     Calculadora de Costos: Gemini vs Claude vs OpenAI
                 </h1>
                 <p class="text-slate-500 mt-2 text-sm md:text-base">
@@ -45,8 +66,7 @@
                 </p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-2 justify-center">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200">
-                    <span class="h-2 w-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
                     Tarifas Oficiales 2026
                 </span>
             </div>
@@ -101,7 +121,7 @@
                         <div class="flex justify-between text-[10px] text-slate-400 mt-1">
                             <span>1K tokens</span>
                             <span>1.5M</span>
-                            <span>3.0M</span>
+                            <span class="text-amber-600 font-semibold">3.0M</span>
                         </div>
                     </div>
 
