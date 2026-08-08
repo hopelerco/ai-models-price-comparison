@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,41 @@
     <!-- Tailwind CSS para diseño moderno -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts (Inter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+
         /* Custom scrollbar para una estética refinada */
         ::-webkit-scrollbar {
             width: 6px;
             height: 6px;
         }
+
         ::-webkit-scrollbar-track {
             background: #f1f5f9;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #cbd5e1;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #94a3b8;
         }
     </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
 
     <div class="max-w-6xl mx-auto px-4 py-6">
-        
+
         <!-- Barra de Navegación de la Empresa (Hopeler) -->
-        <nav class="bg-white border border-slate-200/80 py-3.5 px-6 mb-8 rounded-2xl shadow-sm flex items-center justify-between">
+        <nav
+            class="bg-white border border-slate-200/80 py-3.5 px-6 mb-8 rounded-2xl shadow-sm flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <!-- SVG Logo Hopeler: Elegante, minimalista y tecnológico -->
                 <svg class="w-9 h-9" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,54 +52,66 @@
                             <stop offset="100%" stop-color="#06B6D4" />
                         </linearGradient>
                     </defs>
-                    <rect width="32" height="32" rx="8" fill="url(#hopeler-bg-grad)"/>
-                    <path d="M10 8V24M22 8V24M10 16H22" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                    <path d="M13 11L16 8L19 11" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect width="32" height="32" rx="8" fill="url(#hopeler-bg-grad)" />
+                    <path d="M10 8V24M22 8V24M10 16H22" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    <path d="M13 11L16 8L19 11" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
                 </svg>
                 <div>
-                    <span class="text-2xl font-black tracking-tight text-slate-900 bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-indigo-950 to-indigo-900">Hopeler</span>
+                    <span
+                        class="text-2xl font-black tracking-tight text-slate-900 bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-indigo-950 to-indigo-900">Hopeler</span>
                 </div>
             </div>
         </nav>
 
         <!-- Encabezado Principal -->
-        <header class="mb-8 text-center md:text-left md:flex md:items-center md:justify-between border-b border-slate-200 pb-6">
+        <header
+            class="mb-8 text-center md:text-left md:flex md:items-center md:justify-between border-b border-slate-200 pb-6">
             <div>
-                <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center justify-center md:justify-start gap-2">
-                    <span class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-2.5 py-0.5 rounded-lg text-lg md:text-xl shadow-sm">VS</span>
+                <h1
+                    class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center justify-center md:justify-start gap-2">
+                    <span
+                        class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-2.5 py-0.5 rounded-lg text-lg md:text-xl shadow-sm">VS</span>
                     Calculadora de Costos: Gemini vs Claude vs OpenAI
                 </h1>
                 <p class="text-slate-500 mt-2 text-sm md:text-base">
-                    Evalúa la rentabilidad y calcula presupuestos con penalizaciones por contexto extendido en tiempo real.
+                    Evalúa la rentabilidad y calcula presupuestos con penalizaciones por contexto extendido en tiempo
+                    real.
                 </p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-2 justify-center">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
-                    Tarifas Oficiales 2026
+                <span
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    Tarifas Oficiales - agosto 2026
                 </span>
             </div>
         </header>
 
         <!-- Secciones de Ajustes Rápidos (Presets) -->
         <div class="mb-8">
-            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Preajustes comunes de programación</h2>
+            <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Preajustes comunes de
+                programación</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <button onclick="applyPreset(15000, 3000)" class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
+                <button onclick="applyPreset(15000, 3000)"
+                    class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
                     <div class="font-bold text-slate-800 text-xs md:text-sm">Script Simple</div>
                     <div class="text-slate-400 text-xs mt-1">15K In / 3K Out</div>
                     <div class="text-[10px] text-indigo-600 mt-2 font-semibold">Refactorizar una función</div>
                 </button>
-                <button onclick="applyPreset(150000, 15000)" class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
+                <button onclick="applyPreset(150000, 15000)"
+                    class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
                     <div class="font-bold text-slate-800 text-xs md:text-sm">Módulo Entero</div>
                     <div class="text-slate-400 text-xs mt-1">150K In / 15K Out</div>
                     <div class="text-[10px] text-indigo-600 mt-2 font-semibold">Análisis multi-archivo</div>
                 </button>
-                <button onclick="applyPreset(500000, 40000)" class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
+                <button onclick="applyPreset(500000, 40000)"
+                    class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
                     <div class="font-bold text-slate-800 text-xs md:text-sm">Repositorio Mediano</div>
                     <div class="text-slate-400 text-xs mt-1">500K In / 40K Out</div>
                     <div class="text-[10px] text-amber-600 mt-2 font-semibold">⚠️ Activa contexto largo</div>
                 </button>
-                <button onclick="applyPreset(1500000, 100000)" class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
+                <button onclick="applyPreset(1500000, 100000)"
+                    class="preset-btn p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl text-left transition-all duration-200 shadow-sm hover:shadow">
                     <div class="font-bold text-slate-800 text-xs md:text-sm">Proyecto Masivo</div>
                     <div class="text-slate-400 text-xs mt-1">1.5M In / 100K Out</div>
                     <div class="text-[10px] text-red-600 mt-2 font-semibold">🔥 Penalización máxima</div>
@@ -101,23 +121,34 @@
 
         <!-- Panel de Control y Sliders -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-            <div class="lg:col-span-2 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+            <div
+                class="lg:col-span-2 bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
                 <div>
                     <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4">
+                            </path>
+                        </svg>
                         Ajuste de Volumen de Carga
                     </h3>
-                    
+
                     <!-- Control Input -->
                     <div class="mb-6">
                         <div class="flex justify-between items-center mb-2">
-                            <label for="inputTokens" class="text-sm font-semibold text-slate-700">Tokens de Entrada (Input)</label>
+                            <label for="inputTokens" class="text-sm font-semibold text-slate-700">Tokens de Entrada
+                                (Input)</label>
                             <div class="flex items-center gap-2">
-                                <input type="number" id="inputTokens" value="500000" min="0" max="5000000" step="1000" class="w-32 px-2.5 py-1 text-right border border-slate-300 rounded-lg text-sm font-semibold text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500" oninput="syncInput(this.value, 'inputRange')">
+                                <input type="number" id="inputTokens" value="500000" min="0" max="5000000" step="1000"
+                                    class="w-32 px-2.5 py-1 text-right border border-slate-300 rounded-lg text-sm font-semibold text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                    oninput="syncInput(this.value, 'inputRange')">
                                 <span class="text-slate-400 text-xs">tkn</span>
                             </div>
                         </div>
-                        <input type="range" id="inputRange" min="1000" max="3000000" value="500000" step="5000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="syncInput(this.value, 'inputTokens')">
+                        <input type="range" id="inputRange" min="1000" max="3000000" value="500000" step="5000"
+                            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-indigo-600"
+                            oninput="syncInput(this.value, 'inputTokens')">
                         <div class="flex justify-between text-[10px] text-slate-400 mt-1">
                             <span>1K tokens</span>
                             <span>1.5M</span>
@@ -128,13 +159,18 @@
                     <!-- Control Output -->
                     <div>
                         <div class="flex justify-between items-center mb-2">
-                            <label for="outputTokens" class="text-sm font-semibold text-slate-700">Tokens de Salida (Output)</label>
+                            <label for="outputTokens" class="text-sm font-semibold text-slate-700">Tokens de Salida
+                                (Output)</label>
                             <div class="flex items-center gap-2">
-                                <input type="number" id="outputTokens" value="50000" min="0" max="1000000" step="500" class="w-32 px-2.5 py-1 text-right border border-slate-300 rounded-lg text-sm font-semibold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500" oninput="syncInput(this.value, 'outputRange')">
+                                <input type="number" id="outputTokens" value="50000" min="0" max="1000000" step="500"
+                                    class="w-32 px-2.5 py-1 text-right border border-slate-300 rounded-lg text-sm font-semibold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                                    oninput="syncInput(this.value, 'outputRange')">
                                 <span class="text-slate-400 text-xs">tkn</span>
                             </div>
                         </div>
-                        <input type="range" id="outputRange" min="500" max="500000" value="50000" step="1000" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-500" oninput="syncInput(this.value, 'outputTokens')">
+                        <input type="range" id="outputRange" min="500" max="500000" value="50000" step="1000"
+                            class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-500"
+                            oninput="syncInput(this.value, 'outputTokens')">
                         <div class="flex justify-between text-[10px] text-slate-400 mt-1">
                             <span>500 tokens</span>
                             <span>250K tokens</span>
@@ -142,17 +178,23 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="mt-4 pt-4 border-t border-slate-100 text-xs text-slate-400 italic">
-                    💡 Consejo: Superar los umbrales de contexto aumentará las tarifas de Gemini Pro y GPT-5.5 automáticamente en la tabla de abajo.
+                    💡 Consejo: Superar los umbrales de contexto aumentará las tarifas de Gemini Pro y GPT-5.5
+                    automáticamente en la tabla de abajo.
                 </div>
             </div>
 
             <!-- Panel de Equivalencias -->
-            <div class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-2xl p-6 text-white shadow-lg flex flex-col justify-between">
+            <div
+                class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-2xl p-6 text-white shadow-lg flex flex-col justify-between">
                 <div>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
-                        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                         Equivalencia Estimada
                     </h3>
                     <div class="space-y-4">
@@ -174,7 +216,8 @@
                             <div class="p-2 bg-white/10 rounded-lg text-indigo-300">⏱️</div>
                             <div>
                                 <div class="text-xs text-slate-400">Salida de Código Equivalente</div>
-                                <div id="equivLines" class="text-base font-semibold">~1,250 líneas de código generadas</div>
+                                <div id="equivLines" class="text-base font-semibold">~1,250 líneas de código generadas
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -188,16 +231,20 @@
         <!-- Filtros Rápidos de Proveedores -->
         <div class="flex flex-wrap justify-between items-center mb-4 gap-2">
             <div class="flex items-center gap-2 bg-white p-1 rounded-xl border border-slate-200 shadow-sm">
-                <button onclick="filterProvider('all')" id="btnFilterAll" class="px-4 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all duration-150">
+                <button onclick="filterProvider('all')" id="btnFilterAll"
+                    class="px-4 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 text-white transition-all duration-150">
                     Todos
                 </button>
-                <button onclick="filterProvider('Google')" id="btnFilterGoogle" class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
+                <button onclick="filterProvider('Google')" id="btnFilterGoogle"
+                    class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
                     Google Gemini
                 </button>
-                <button onclick="filterProvider('Anthropic')" id="btnFilterAnthropic" class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
+                <button onclick="filterProvider('Anthropic')" id="btnFilterAnthropic"
+                    class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
                     Anthropic Claude
                 </button>
-                <button onclick="filterProvider('OpenAI')" id="btnFilterOpenAI" class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
+                <button onclick="filterProvider('OpenAI')" id="btnFilterOpenAI"
+                    class="px-4 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:bg-slate-50 transition-all duration-150">
                     OpenAI
                 </button>
             </div>
@@ -211,20 +258,26 @@
             <div class="overflow-x-auto">
                 <table id="costTable" class="w-full text-left border-collapse">
                     <thead>
-                        <tr class="bg-slate-100 text-slate-700 uppercase text-[11px] font-bold tracking-wider border-b border-slate-200">
-                            <th onclick="sortTable(0)" class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                        <tr
+                            class="bg-slate-100 text-slate-700 uppercase text-[11px] font-bold tracking-wider border-b border-slate-200">
+                            <th onclick="sortTable(0)"
+                                class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none">
                                 Proveedor <span class="text-slate-400 font-normal">⇅</span>
                             </th>
-                            <th onclick="sortTable(1)" class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                            <th onclick="sortTable(1)"
+                                class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none">
                                 Modelo <span class="text-slate-400 font-normal">⇅</span>
                             </th>
-                            <th onclick="sortTable(2)" class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right">
+                            <th onclick="sortTable(2)"
+                                class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right">
                                 Costo In (1M) <span class="text-slate-400 font-normal">⇅</span>
                             </th>
-                            <th onclick="sortTable(3)" class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right">
+                            <th onclick="sortTable(3)"
+                                class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right">
                                 Costo Out (1M) <span class="text-slate-400 font-normal">⇅</span>
                             </th>
-                            <th onclick="sortTable(4)" class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right text-indigo-600">
+                            <th onclick="sortTable(4)"
+                                class="px-6 py-4 cursor-pointer hover:bg-slate-200 transition-colors select-none text-right text-indigo-600">
                                 Costo Simulado <span class="text-slate-400 font-normal">⇅</span>
                             </th>
                             <th class="px-6 py-4 max-w-xs">
@@ -234,308 +287,404 @@
                     </thead>
                     <tbody class="divide-y divide-slate-100">
                         <!-- Claude Fable 5 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-fable-5" data-base-input-rate="10.00" data-base-output-rate="50.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-fable-5" data-base-input-rate="10.00" data-base-output-rate="50.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Fable 5</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$10.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$50.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$50.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Razonamiento especulativo avanzado, diseño de arquitectura de sistemas complejos y decisiones de diseño crítico a gran escala.
+                                Razonamiento especulativo avanzado, diseño de arquitectura de sistemas complejos y
+                                decisiones de diseño crítico a gran escala.
                             </td>
                         </tr>
 
                         <!-- Claude Opus 5 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-opus-5" data-base-input-rate="5.00" data-base-output-rate="25.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-opus-5" data-base-input-rate="5.00" data-base-output-rate="25.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Opus 5</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Nuevo modelo insignia para razonamiento de nivel experto, depuración profunda de microservicios y generación de código crítico multi-archivo.
+                                Nuevo modelo insignia para razonamiento de nivel experto, depuración profunda de
+                                microservicios y generación de código crítico multi-archivo.
                             </td>
                         </tr>
 
                         <!-- Claude Opus 4.8 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-opus-4.8" data-base-input-rate="5.00" data-base-output-rate="25.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-opus-4.8" data-base-input-rate="5.00" data-base-output-rate="25.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Opus 4.8</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Generación Opus previa de alta potencia para análisis profundo de código, lógica compleja y refactorizaciones críticas.
+                                Generación Opus previa de alta potencia para análisis profundo de código, lógica
+                                compleja y refactorizaciones críticas.
                             </td>
                         </tr>
 
                         <!-- Claude Opus 4.7 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-opus" data-base-input-rate="5.00" data-base-output-rate="25.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-opus" data-base-input-rate="5.00" data-base-output-rate="25.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Opus 4.7 / 4.6</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$25.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Razonamiento de nivel experto para depurar arquitecturas de microservicios y generación de código crítico multi-archivo.
+                                Razonamiento de nivel experto para depurar arquitecturas de microservicios y generación
+                                de código crítico multi-archivo.
                             </td>
                         </tr>
 
                         <!-- OpenAI GPT-5.6 Sol (Con penalización de contexto largo) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.6-sol" data-base-input-rate="5.00" data-base-output-rate="30.00" data-context-limit="272000">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.6-sol"
+                            data-base-input-rate="5.00" data-base-output-rate="30.00" data-context-limit="272000">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     OpenAI
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Sol <span class="text-[10px] text-slate-400 font-normal">(≤272K)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Sol <span
+                                    class="text-[10px] text-slate-400 font-normal">(≤272K)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$30.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$30.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Flagship de frontera con razonamiento superior y ejecución de agentes autónomos multinivel en entornos complejos de Codex.
+                                Flagship de frontera con razonamiento superior y ejecución de agentes autónomos
+                                multinivel en entornos complejos de Codex.
                             </td>
                         </tr>
 
                         <!-- OpenAI GPT-5.5 (Con penalización de contexto largo) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.5" data-base-input-rate="5.00" data-base-output-rate="30.00" data-context-limit="272000">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.5"
+                            data-base-input-rate="5.00" data-base-output-rate="30.00" data-context-limit="272000">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     OpenAI
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.5 <span class="text-[10px] text-slate-400 font-normal">(≤272K)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.5 <span
+                                    class="text-[10px] text-slate-400 font-normal">(≤272K)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$30.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$30.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Razonamiento pionero de frontera y ejecución de agentes multinivel de alto rendimiento en entornos complejos de Codex.
+                                Razonamiento pionero de frontera y ejecución de agentes multinivel de alto rendimiento
+                                en entornos complejos de Codex.
                             </td>
                         </tr>
 
                         <!-- Claude Sonnet 5 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-sonnet-5" data-base-input-rate="2.00" data-base-output-rate="10.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-sonnet-5" data-base-input-rate="3.00" data-base-output-rate="15.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Sonnet 5</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$2.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$10.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$3.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$15.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Estándar líder de la industria para desarrollo. Excelente equilibrio en refactorización profunda, pruebas unitarias y auto-completado.
+                                Estándar líder de la industria para desarrollo. Excelente equilibrio en refactorización
+                                profunda, pruebas unitarias y auto-completado.
                             </td>
                         </tr>
 
                         <!-- OpenAI GPT-5.6 Terra (Mini) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.6-terra" data-base-input-rate="2.00" data-base-output-rate="12.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI"
+                            data-model-id="gpt-5.6-terra" data-base-input-rate="2.00" data-base-output-rate="12.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     OpenAI
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Terra <span class="text-[10px] text-slate-400 font-normal">(Mini)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Terra <span
+                                    class="text-[10px] text-slate-400 font-normal">(Mini)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$2.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$12.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$12.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Asistente intermedio eficiente para lógica de subagentes, refactorización ágil y tareas cotidianas de ingeniería de software.
+                                Asistente intermedio eficiente para lógica de subagentes, refactorización ágil y tareas
+                                cotidianas de ingeniería de software.
                             </td>
                         </tr>
 
                         <!-- Claude Sonnet 4.6 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-sonnet" data-base-input-rate="3.00" data-base-output-rate="15.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-sonnet" data-base-input-rate="3.00" data-base-output-rate="15.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Sonnet 4.6</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$3.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$15.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$15.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                El estándar de la industria en desarrollo. Excelente equilibrio en refactorización profunda, pruebas unitarias y auto-completado.
+                                El estándar de la industria en desarrollo. Excelente equilibrio en refactorización
+                                profunda, pruebas unitarias y auto-completado.
                             </td>
                         </tr>
 
                         <!-- Gemini 3.1 Pro (Con penalización de contexto largo) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-3.1-pro" data-base-input-rate="2.00" data-base-output-rate="12.00" data-context-limit="200000">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-3.1-pro" data-base-input-rate="2.00" data-base-output-rate="12.00"
+                            data-context-limit="200000">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.1 Pro <span class="text-[10px] text-slate-400 font-normal">(≤200K)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.1 Pro <span
+                                    class="text-[10px] text-slate-400 font-normal">(≤200K)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$2.00</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$12.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$12.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Increíble ventana de contexto masiva. Ideal para digerir repositorios gigantescos completos o documentación técnica masiva.
+                                Increíble ventana de contexto masiva. Ideal para digerir repositorios gigantescos
+                                completos o documentación técnica masiva.
                             </td>
                         </tr>
 
                         <!-- Gemini 3.6 Flash -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-3.6-flash" data-base-input-rate="1.50" data-base-output-rate="7.50">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-3.6-flash" data-base-input-rate="1.50" data-base-output-rate="7.50">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.6 Flash</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.50</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$7.50</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Inteligencia multimodal de alta velocidad y token-eficiente para bucles agénticos paralelos y generación de código en tiempo real.
+                                Inteligencia multimodal de alta velocidad y token-eficiente para bucles agénticos
+                                paralelos y generación de código en tiempo real.
                             </td>
                         </tr>
 
                         <!-- Gemini 3.5 Flash -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-3.5-flash" data-base-input-rate="1.50" data-base-output-rate="9.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-3.5-flash" data-base-input-rate="1.50" data-base-output-rate="9.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.5 Flash</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.50</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$9.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Inteligencia multimodal de alta eficiencia con rendimiento cercano a Pro. Altamente optimizado para bucles de agentes de software en paralelo.
+                                Inteligencia multimodal de alta eficiencia con rendimiento cercano a Pro. Altamente
+                                optimizado para bucles de agentes de software en paralelo.
                             </td>
                         </tr>
 
                         <!-- Gemini 2.5 Pro (Con penalización de contexto largo) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-2.5-pro" data-base-input-rate="1.25" data-base-output-rate="10.00" data-context-limit="200000">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-2.5-pro" data-base-input-rate="1.25" data-base-output-rate="10.00"
+                            data-context-limit="200000">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(≤200K)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 2.5 Pro <span
+                                    class="text-[10px] text-slate-400 font-normal">(≤200K)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.25</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$10.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$10.00
+                            </td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Excelente alternativa rentable de alta complejidad. Muy bueno para automatización compleja de scripts y DevOps.
+                                Excelente alternativa rentable de alta complejidad. Muy bueno para automatización
+                                compleja de scripts y DevOps.
                             </td>
                         </tr>
 
                         <!-- Claude Haiku 4.5 -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic" data-model-id="claude-haiku" data-base-input-rate="1.00" data-base-output-rate="5.00">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic"
+                            data-model-id="claude-haiku" data-base-input-rate="1.00" data-base-output-rate="5.00">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">
                                     Anthropic
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Claude Haiku 4.5</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.00</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$5.00</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Extrema velocidad. Perfecto para pre-linter, análisis de sintaxis rápidos, generación de documentación en línea o CI/CD.
+                                Extrema velocidad. Perfecto para pre-linter, análisis de sintaxis rápidos, generación de
+                                documentación en línea o CI/CD.
                             </td>
                         </tr>
 
                         <!-- OpenAI GPT-5.4 Mini -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.4-mini" data-base-input-rate="0.75" data-base-output-rate="4.50">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.4-mini"
+                            data-base-input-rate="0.75" data-base-output-rate="4.50">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     OpenAI
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.4 Mini</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$0.75</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$4.50</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Asistente principal de codificación, excelente balance entre lógica compleja de subagentes y velocidad de procesamiento.
+                                Asistente principal de codificación, excelente balance entre lógica compleja de
+                                subagentes y velocidad de procesamiento.
                             </td>
                         </tr>
 
                         <!-- Gemini 3.5 Flash-Lite -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-3.5-flash-lite" data-base-input-rate="0.30" data-base-output-rate="2.50">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-3.5-flash-lite" data-base-input-rate="0.30"
+                            data-base-output-rate="2.50">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.5 Flash-Lite</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$0.30</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$2.50</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Ultra costo-eficiente para automatizaciones a gran escala, clasificación de prompts, linting rápido y micro-servicios.
+                                Ultra costo-eficiente para automatizaciones a gran escala, clasificación de prompts,
+                                linting rápido y micro-servicios.
                             </td>
                         </tr>
 
                         <!-- Gemini 3.1 Flash-Lite -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google" data-model-id="gemini-3.1-flash-lite" data-base-input-rate="0.25" data-base-output-rate="1.50">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
+                            data-model-id="gemini-3.1-flash-lite" data-base-input-rate="0.25"
+                            data-base-output-rate="1.50">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
                             <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.1 Flash-Lite</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$0.25</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$1.50</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Extremadamente rápido y el más costo-eficiente para tareas a escala, clasificación rápida y micro-automatizaciones.
+                                Extremadamente rápido y el más costo-eficiente para tareas a escala, clasificación
+                                rápida y micro-automatizaciones.
                             </td>
                         </tr>
 
                         <!-- OpenAI GPT-5.6 Luna (Nano) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.6-luna" data-base-input-rate="0.20" data-base-output-rate="1.20">
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.6-luna"
+                            data-base-input-rate="0.20" data-base-output-rate="1.20">
                             <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span
+                                    class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
                                     OpenAI
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Luna <span class="text-[10px] text-slate-400 font-normal">(Nano)</span></td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.6 Luna <span
+                                    class="text-[10px] text-slate-400 font-normal">(Nano)</span></td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$0.20</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$1.20</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
+                            <td
+                                class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
+                                $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Micro-asistente ultra económico para pipelines continuos de CI/CD, formateo estructurado y procesamiento masivo de datos.
+                                Micro-asistente ultra económico para pipelines continuos de CI/CD, formateo estructurado
+                                y procesamiento masivo de datos.
                             </td>
                         </tr>
 
-                        <!-- OpenAI GPT-5.4 Nano -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI" data-model-id="gpt-5.4-nano" data-base-input-rate="0.20" data-base-output-rate="1.25">
-                            <td class="px-6 py-4">
-                                <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                                    OpenAI
-                                </span>
-                            </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">GPT-5.4 Nano</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$0.20</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$1.25</td>
-                            <td class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">$0.00</td>
-                            <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Micro-asistente ultra económico para pipelines continuos, procesamiento rápido de scripts y formateo estructurado de datos.
-                            </td>
-                        </tr>
 
                     </tbody>
                 </table>
@@ -545,11 +694,17 @@
         <!-- Visualizador Comparativo de Costos Gráfico -->
         <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
             <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                    </path>
+                </svg>
                 Gráfico Comparativo de Presupuesto
             </h3>
-            <p class="text-slate-400 text-xs mb-6">Comparación proporcional de costos calculados para tu carga de tokens (incluye incrementos por contexto).</p>
-            
+            <p class="text-slate-400 text-xs mb-6">Comparación proporcional de costos calculados para tu carga de tokens
+                (incluye incrementos por contexto).</p>
+
             <div id="visualChartContainer" class="space-y-4">
                 <!-- Se inyecta dinámicamente -->
             </div>
@@ -559,39 +714,391 @@
         <div class="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-900 text-xs flex gap-3">
             <span class="text-xl">⚠️</span>
             <div>
-                <strong class="font-semibold text-amber-950">Nota sobre el contexto extendido (Gemini, OpenAI y Claude):</strong>
+                <strong class="font-semibold text-amber-950">Nota sobre el contexto extendido (Gemini, OpenAI y
+                    Claude):</strong>
                 <ul class="list-disc list-inside space-y-1.5 mt-1">
-                    <li><strong class="text-amber-950">Google Gemini Pro:</strong> Las tarifas estándar de Gemini Pro son válidas para contextos de hasta 200,000 tokens. Si alimentas al modelo con prompts que superen ese umbral, el costo de entrada se duplica ($4.00/1M para Gemini 3.1 Pro y $2.50/1M para 2.5 Pro). Los modelos Gemini Flash mantienen su tarifa plana.</li>
-                    <li><strong class="text-amber-950">OpenAI Flagships (GPT-5.6 Sol & GPT-5.5):</strong> Las tarifas de entrada aplican para contextos inferiores a 272,000 tokens. Superar este umbral activa un recargo que duplica el costo de entrada ($10.00/1M) e incrementa el de salida en 1.5x ($45.00/1M). Las gamas Terra, Luna, Mini y Nano ofrecen tarifas planas.</li>
-                    <li><strong class="text-amber-950">Anthropic Claude:</strong> Los modelos de Anthropic (Fable 5, Opus 5/4.8, Sonnet 5 y Haiku 4.5) ofrecen una estructura de tarifa plana predecible en todo su rango de contexto sin recargos por longitud de prompt, con soporte de hasta 90% de descuento por Caching de Prompts.</li>
+                    <li><strong class="text-amber-950">Google Gemini Pro:</strong> Las tarifas estándar de Gemini Pro
+                        son válidas para contextos de hasta 200,000 tokens. Si alimentas al modelo con prompts que
+                        superen ese umbral, se aplica la tarifa de contexto largo ($4.00 In / $18.00 Out para Gemini 3.1 Pro y $2.50 In / $15.00 Out para
+                        2.5 Pro). Los modelos Gemini Flash mantienen su tarifa plana.</li>
+                    <li><strong class="text-amber-950">OpenAI Flagships (GPT-5.6 Sol & GPT-5.5):</strong> Las tarifas de
+                        entrada aplican para contextos inferiores a 272,000 tokens. Superar este umbral activa un
+                        recargo que duplica el costo de entrada ($10.00/1M) e incrementa el de salida en 1.5x
+                        ($45.00/1M). Las gamas Terra, Luna, Mini y Nano ofrecen tarifas planas.</li>
+                    <li><strong class="text-amber-950">Anthropic Claude:</strong> Los modelos de Anthropic (Fable 5,
+                        Opus 5/4.8, Sonnet 5 y Haiku 4.5) ofrecen una estructura de tarifa plana predecible en todo su
+                        rango de contexto sin recargos por longitud de prompt, con soporte de hasta 90% de descuento por
+                        Caching de Prompts.</li>
                 </ul>
+            </div>
+        </div>
+
+        <!-- Sección de Benchmarks de Epoch AI -->
+        <div class="mt-8 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8 p-6">
+            <div class="mb-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 border-b border-slate-100 pb-4">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        Índices de Capacidades (Epoch AI Benchmarks)
+                    </h3>
+                    <p class="text-slate-500 text-xs mt-1">
+                        Puntajes verificados e intervalos de confianza al 90% [IC 90%] para capacidades generales (ECI), ingeniería de software (SWE) y matemáticas. Haz clic en las columnas para ordenar de mayor a menor.
+                    </p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200">
+                        Evaluación Oficial Epoch AI
+                    </span>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table id="benchmarkTable" class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700 uppercase text-[11px] font-bold tracking-wider border-b border-slate-200">
+                            <th onclick="sortBenchmarkTable(0)" class="px-5 py-3.5 cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                                Proveedor <span class="text-slate-400 font-normal">⇅</span>
+                            </th>
+                            <th onclick="sortBenchmarkTable(1)" class="px-5 py-3.5 cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                                Modelo <span class="text-slate-400 font-normal">⇅</span>
+                            </th>
+                            <th onclick="sortBenchmarkTable(2)" class="px-5 py-3.5 text-center cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                                ECI General <span class="text-slate-400 font-normal">⇅</span>
+                                <span class="text-slate-400 text-[10px] font-normal block">Puntaje [IC 90%]</span>
+                            </th>
+                            <th onclick="sortBenchmarkTable(3)" class="px-5 py-3.5 text-center cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                                SWE-ECI (Software) <span class="text-slate-400 font-normal">⇅</span>
+                                <span class="text-slate-400 text-[10px] font-normal block">Puntaje [IC 90%]</span>
+                            </th>
+                            <th onclick="sortBenchmarkTable(4)" class="px-5 py-3.5 text-center cursor-pointer hover:bg-slate-200 transition-colors select-none">
+                                Math-ECI (Matemáticas) <span class="text-slate-400 font-normal">⇅</span>
+                                <span class="text-slate-400 text-[10px] font-normal block">Puntaje [IC 90%]</span>
+                            </th>
+                            <th onclick="sortBenchmarkTable(5)" class="px-5 py-3.5 text-right cursor-pointer hover:bg-slate-200 transition-colors select-none text-indigo-600">
+                                $/Punto ECI <span class="text-slate-400 font-normal">⇅</span>
+                                <span class="text-indigo-400 text-[10px] font-normal block">1M Out $ / ECI Gen</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-sm">
+                        <!-- Claude Fable 5 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Fable 5</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.5</span> <span class="text-xs text-slate-400 block">[158.9 – 164.7]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">162.5</span> <span class="text-xs text-slate-400 block">[159.4 – 166.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">162.3</span> <span class="text-xs text-slate-400 block">[159.2 – 166.0]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.3096</td>
+                        </tr>
+
+                        <!-- Claude Opus 5 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Opus 5</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.0</span> <span class="text-xs text-slate-400 block">[158.7 – 164.2]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.6</span> <span class="text-xs text-slate-400 block">[158.9 – 165.5]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">160.8</span> <span class="text-xs text-slate-400 block">[158.2 – 163.8]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1553</td>
+                        </tr>
+
+                        <!-- Claude Opus 4.8 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Opus 4.8</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">157.9</span> <span class="text-xs text-slate-400 block">[155.8 – 160.2]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">159.1</span> <span class="text-xs text-slate-400 block">[156.6 – 162.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">158.5</span> <span class="text-xs text-slate-400 block">[156.2 – 161.2]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1583</td>
+                        </tr>
+
+                        <!-- Claude Opus 4.7 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Opus 4.7</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.8</span> <span class="text-xs text-slate-400 block">[154.0 – 157.7]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.7</span> <span class="text-xs text-slate-400 block">[153.6 – 159.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.5</span> <span class="text-xs text-slate-400 block">[153.5 – 157.9]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1605</td>
+                        </tr>
+
+                        <!-- Claude Opus 4.6 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Opus 4.6</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.2</span> <span class="text-xs text-slate-400 block">[153.2 – 156.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">157.4</span> <span class="text-xs text-slate-400 block">[155.2 – 160.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.8</span> <span class="text-xs text-slate-400 block">[152.6 – 157.0]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1611</td>
+                        </tr>
+
+                        <!-- Claude Sonnet 5 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Sonnet 5</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.5</span> <span class="text-xs text-slate-400 block">[153.0 – 157.6]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">155.7</span> <span class="text-xs text-slate-400 block">[152.9 – 158.1]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">156.0</span> <span class="text-xs text-slate-400 block">[152.9 – 159.4]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0965</td>
+                        </tr>
+
+                        <!-- Claude Sonnet 4.6 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Sonnet 4.6</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.4</span> <span class="text-xs text-slate-400 block">[149.9 – 154.3]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">151.3</span> <span class="text-xs text-slate-400 block">[149.3 – 153.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.3</span> <span class="text-xs text-slate-400 block">[149.0 – 155.5]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0984</td>
+                        </tr>
+
+                        <!-- Claude Haiku 4.5 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Anthropic">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-50 text-orange-700 border border-orange-200">Anthropic</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Claude Haiku 4.5</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">142.8</span> <span class="text-xs text-slate-400 block">[139.9 – 144.5]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">145.3</span> <span class="text-xs text-slate-400 block">[142.6 – 148.0]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">141.5</span> <span class="text-xs text-slate-400 block">[139.5 – 144.4]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0350</td>
+                        </tr>
+
+                        <!-- GPT-5.6 Sol -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.6 Sol</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.7</span> <span class="text-xs text-slate-400 block">[159.1 – 164.8]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.3</span> <span class="text-xs text-slate-400 block">[158.5 – 164.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">161.8</span> <span class="text-xs text-slate-400 block">[159.0 – 165.4]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1855</td>
+                        </tr>
+
+                        <!-- GPT-5.5 -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.5</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">159.2</span> <span class="text-xs text-slate-400 block">[156.8 – 162.0]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">160.1</span> <span class="text-xs text-slate-400 block">[157.3 – 164.2]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">158.6</span> <span class="text-xs text-slate-400 block">[155.7 – 162.3]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.1884</td>
+                        </tr>
+
+                        <!-- GPT-5.6 Terra -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.6 Terra</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">159.0</span> <span class="text-xs text-slate-400 block">[156.5 – 161.6]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">159.5</span> <span class="text-xs text-slate-400 block">[156.8 – 162.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">160.0</span> <span class="text-xs text-slate-400 block">[157.7 – 162.9]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0755</td>
+                        </tr>
+
+                        <!-- GPT-5.6 Luna -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.6 Luna</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">156.1</span> <span class="text-xs text-slate-400 block">[153.9 – 158.3]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">156.5</span> <span class="text-xs text-slate-400 block">[151.5 – 159.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">157.9</span> <span class="text-xs text-slate-400 block">[155.7 – 160.5]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0077</td>
+                        </tr>
+
+                        <!-- GPT-5.4 Mini -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.4 Mini</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">148.9</span> <span class="text-xs text-slate-400 block">[147.4 – 150.3]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">150.3</span> <span class="text-xs text-slate-400 block">[148.2 – 151.7]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0302</td>
+                        </tr>
+
+                        <!-- GPT-5.4 Nano -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="OpenAI">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">OpenAI</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">GPT-5.4 Nano</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">146.2</span> <span class="text-xs text-slate-400 block">[143.9 – 148.1]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">148.4</span> <span class="text-xs text-slate-400 block">[146.0 – 150.0]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0085</td>
+                        </tr>
+
+                        <!-- Gemini 3.1 Pro -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.1 Pro</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.8</span> <span class="text-xs text-slate-400 block">[152.6 – 157.1]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.2</span> <span class="text-xs text-slate-400 block">[148.1 – 156.7]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.8</span> <span class="text-xs text-slate-400 block">[151.3 – 154.4]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0775</td>
+                        </tr>
+
+                        <!-- Gemini 3.6 Flash -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.6 Flash</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.0</span> <span class="text-xs text-slate-400 block">[152.3 – 155.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.1</span> <span class="text-xs text-slate-400 block">[147.8 – 156.5]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">153.2</span> <span class="text-xs text-slate-400 block">[151.4 – 154.8]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0487</td>
+                        </tr>
+
+                        <!-- Gemini 3.5 Flash -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.5 Flash</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.6</span> <span class="text-xs text-slate-400 block">[152.6 – 156.6]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.2</span> <span class="text-xs text-slate-400 block">[150.3 – 154.2]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">153.2</span> <span class="text-xs text-slate-400 block">[151.8 – 154.7]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0582</td>
+                        </tr>
+
+                        <!-- Gemini 3.5 Flash-Lite -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.5 Flash-Lite</td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono text-slate-400">N/D</td>
+                        </tr>
+
+                        <!-- Gemini 3.1 Flash-Lite -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.1 Flash-Lite</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.2</span> <span class="text-xs text-slate-400 block">[135.9 – 146.3]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0104</td>
+                        </tr>
+
+                        <!-- Gemini 2.5 Pro (Jun 2025) -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(Jun 2025)</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">145.8</span> <span class="text-xs text-slate-400 block">[144.1 – 147.4]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">145.2</span> <span class="text-xs text-slate-400 block">[142.2 – 147.1]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.6</span> <span class="text-xs text-slate-400 block">[141.5 – 146.1]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0686</td>
+                        </tr>
+
+                        <!-- Gemini 2.5 Pro (Mar 2025) -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(Mar 2025)</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.5</span> <span class="text-xs text-slate-400 block">[142.6 – 147.2]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0692</td>
+                        </tr>
+
+                        <!-- Gemini 2.5 Pro (May 2025) -->
+                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
+                            <td class="px-5 py-3.5">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
+                            </td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(May 2025)</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">142.7</span> <span class="text-xs text-slate-400 block">[139.5 – 145.5]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0701</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Nota final citando la URL oficial de Epoch AI -->
+            <div class="mt-4 pt-4 border-t border-slate-100 flex flex-col md:flex-row items-start md:items-center justify-between text-xs text-slate-500 gap-2">
+                <div class="flex items-center gap-2">
+                    <span class="text-indigo-600 font-bold">📊 Atribución de Datos:</span>
+                    <span>Estos indicadores vienen oficialmente de <strong>Epoch AI</strong>. Consulta los rankings, metodología de IRT y datos completos en <a href="https://epoch.ai/eci" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline font-bold inline-flex items-center gap-1">https://epoch.ai/eci <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a></span>
+                </div>
             </div>
         </div>
 
         <!-- Enlaces Oficiales de Tarifas -->
         <div class="mt-8 pt-6 border-t border-slate-200">
-            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 text-center md:text-left">Fuentes de Tarifas y Enlaces Oficiales</h4>
+            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 text-center md:text-left">Fuentes
+                de Tarifas y Enlaces Oficiales</h4>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
+                <a href="https://ai.google.dev/gemini-api/docs/pricing" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
                     <div class="flex items-center gap-2">
                         <span class="text-sm font-bold text-blue-600">Google Gemini</span>
                         <div class="text-[11px] text-slate-500">Documentación de Costos</div>
                     </div>
-                    <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    <svg class="w-4 h-4 text-slate-400 group-hover:text-blue-600 transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
                 </a>
-                <a href="https://claude.com/pricing#api" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
+                <a href="https://claude.com/pricing#api" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
                     <div class="flex items-center gap-2">
                         <span class="text-sm font-bold text-orange-600">Anthropic Claude</span>
                         <div class="text-[11px] text-slate-500">Página Oficial de Tarifas</div>
                     </div>
-                    <svg class="w-4 h-4 text-slate-400 group-hover:text-orange-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    <svg class="w-4 h-4 text-slate-400 group-hover:text-orange-600 transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
                 </a>
-                <a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
+                <a href="https://developers.openai.com/api/docs/pricing" target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-between p-3 bg-white hover:bg-slate-100 border border-slate-200 rounded-xl transition-all duration-200 shadow-sm hover:shadow group">
                     <div class="flex items-center gap-2">
                         <span class="text-sm font-bold text-emerald-600">OpenAI API</span>
                         <div class="text-[11px] text-slate-500">Tarifas de Modelos</div>
                     </div>
-                    <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -600,7 +1107,7 @@
 
     <script>
         // Función de inicialización
-        window.onload = function() {
+        window.onload = function () {
             calcularCostos();
         };
 
@@ -615,10 +1122,10 @@
         function applyPreset(inTokens, outTokens) {
             document.getElementById('inputTokens').value = inTokens;
             document.getElementById('inputRange').value = inTokens > 3000000 ? 3000000 : inTokens;
-            
+
             document.getElementById('outputTokens').value = outTokens;
             document.getElementById('outputRange').value = outTokens > 500000 ? 500000 : outTokens;
-            
+
             // Highlight activo para el botón
             document.querySelectorAll('.preset-btn').forEach(btn => {
                 btn.classList.remove('border-indigo-500', 'bg-indigo-50/50', 'ring-2', 'ring-indigo-100');
@@ -660,6 +1167,14 @@
                         // OpenAI Flagships (GPT-5.5 / GPT-5.6 Sol): Duplica input, 1.5x output
                         effectiveInputRate = baseInputRate * 2;
                         effectiveOutputRate = baseOutputRate * 1.5;
+                    } else if (modelId === 'gemini-3.1-pro') {
+                        // Google Gemini 3.1 Pro: $4.00 Input, $18.00 Output en contexto largo (>200K)
+                        effectiveInputRate = 4.00;
+                        effectiveOutputRate = 18.00;
+                    } else if (modelId === 'gemini-2.5-pro') {
+                        // Google Gemini 2.5 Pro: $2.50 Input, $15.00 Output en contexto largo (>200K)
+                        effectiveInputRate = 2.50;
+                        effectiveOutputRate = 15.00;
                     } else if (modelId.startsWith('gemini-')) {
                         // Google Gemini Pro: Duplica input
                         effectiveInputRate = baseInputRate * 2;
@@ -674,10 +1189,10 @@
                 // Actualizar visualmente las tarifas individuales aplicadas en la tabla
                 const rateInCell = row.querySelector('.rate-in-cell');
                 const rateOutCell = row.querySelector('.rate-out-cell');
-                
+
                 if (contextPenaltyActive) {
                     rateInCell.innerHTML = `<span class="text-amber-600 font-bold" title="Original: $${baseInputRate.toFixed(2)}">$${effectiveInputRate.toFixed(2)} *</span>`;
-                    rateOutCell.innerHTML = `<span class="${modelId === 'gpt-5.5' ? 'text-amber-600 font-bold' : 'text-slate-600'}" title="Original: $${baseOutputRate.toFixed(2)}">$${effectiveOutputRate.toFixed(2)}</span>`;
+                    rateOutCell.innerHTML = `<span class="${(modelId === 'gpt-5.5' || modelId === 'gpt-5.6-sol' || modelId === 'gemini-3.1-pro' || modelId === 'gemini-2.5-pro') ? 'text-amber-600 font-bold' : 'text-slate-600'}" title="Original: $${baseOutputRate.toFixed(2)}">$${effectiveOutputRate.toFixed(2)}</span>`;
                 } else {
                     rateInCell.innerHTML = `<span class="text-slate-600">$${baseInputRate.toFixed(2)}</span>`;
                     rateOutCell.innerHTML = `<span class="text-slate-600">$${baseOutputRate.toFixed(2)}</span>`;
@@ -757,8 +1272,8 @@
 
         // Filtros por proveedor
         function filterProvider(provider) {
-            const rows = document.querySelectorAll('#costTable tbody tr');
-            
+            const rows = document.querySelectorAll('#costTable tbody tr, #benchmarkTable tbody tr');
+
             // Actualizar apariencia de botones
             document.getElementById('btnFilterAll').className = "px-4 py-1.5 rounded-lg text-xs font-semibold " + (provider === 'all' ? 'bg-indigo-600 text-white' : 'text-slate-600 hover:bg-slate-50');
             document.getElementById('btnFilterGoogle').className = "px-4 py-1.5 rounded-lg text-xs font-semibold " + (provider === 'Google' ? 'bg-indigo-600 text-white' : 'text-slate-600 hover:bg-slate-50');
@@ -780,22 +1295,22 @@
             const table = document.getElementById("costTable");
             let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
             switching = true;
-            dir = sortDirections[n] ? "asc" : "desc"; 
-            
+            dir = sortDirections[n] ? "asc" : "desc";
+
             while (switching) {
                 switching = false;
                 rows = table.rows;
                 for (i = 1; i < (rows.length - 1); i++) {
                     shouldSwitch = false;
                     x = rows[i].getElementsByTagName("TD")[n];
-                    y = rows[i+1].getElementsByTagName("TD")[n];
-                    
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+
                     // Limpieza para comparar valores numéricos
                     let xVal = x.innerText.replace('$', '').trim();
                     let yVal = y.innerText.replace('$', '').trim();
-                    
+
                     let isNum = !isNaN(parseFloat(xVal)) && isFinite(xVal);
-                    
+
                     if (dir === "asc") {
                         if (isNum) {
                             if (parseFloat(xVal) > parseFloat(yVal)) { shouldSwitch = true; break; }
@@ -813,7 +1328,7 @@
                 if (shouldSwitch) {
                     rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
                     switching = true;
-                    switchcount ++;      
+                    switchcount++;
                 } else {
                     if (switchcount === 0 && dir === "asc") {
                         dir = "desc";
@@ -824,6 +1339,47 @@
             // Guardar dirección invertida para el próximo click
             sortDirections[n] = !sortDirections[n];
         }
+
+        // Algoritmo para ordenar columnas de la tabla de benchmarks de Epoch AI
+        let benchSortDirections = [true, true, false, false, false, true]; // Default para n=5: menor precio a mayor
+        function sortBenchmarkTable(n) {
+            const table = document.getElementById("benchmarkTable");
+            const tbody = table.querySelector("tbody");
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+
+            const isAsc = benchSortDirections[n];
+
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.cells[n];
+                const cellB = rowB.cells[n];
+
+                if (n >= 2) {
+                    // Indicadores numéricos y $/Punto ECI
+                    const boldA = cellA.querySelector('.font-bold');
+                    const boldB = cellB.querySelector('.font-bold');
+
+                    const textA = (boldA ? boldA.innerText : cellA.innerText).replace('$', '').trim();
+                    const textB = (boldB ? boldB.innerText : cellB.innerText).replace('$', '').trim();
+
+                    const valA = isNaN(parseFloat(textA)) ? (isAsc ? 999999 : -999999) : parseFloat(textA);
+                    const valB = isNaN(parseFloat(textB)) ? (isAsc ? 999999 : -999999) : parseFloat(textB);
+
+                    return isAsc ? (valA - valB) : (valB - valA);
+                } else {
+                    // Texto (Proveedor, Modelo)
+                    const textA = cellA.innerText.trim().toLowerCase();
+                    const textB = cellB.innerText.trim().toLowerCase();
+                    return isAsc ? textA.localeCompare(textB) : textB.localeCompare(textA);
+                }
+            });
+
+            // Re-insertar filas ordenadas
+            rows.forEach(row => tbody.appendChild(row));
+
+            // Invertir dirección para el siguiente click
+            benchSortDirections[n] = !benchSortDirections[n];
+        }
     </script>
 </body>
+
 </html>
