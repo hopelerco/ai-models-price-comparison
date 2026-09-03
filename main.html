@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparador de Costos: Gemini vs Claude vs OpenAI | Hopeler</title>
+    <!-- Favicon Hopeler -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='hopeler-bg-grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%234F46E5'/%3E%3Cstop offset='100%25' stop-color='%2306B6D4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23hopeler-bg-grad)'/%3E%3Cpath d='M10 8V24M22 8V24M10 16H22' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M13 11L16 8L19 11' stroke='%2322D3EE' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- Tailwind CSS para diseño moderno -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts (Inter) -->
@@ -511,16 +515,16 @@
                             </td>
                         </tr>
 
-                        <!-- Gemini 3.6 Flash -->
+                        <!-- Gemini 3.8 Flash -->
                         <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
-                            data-model-id="gemini-3.6-flash" data-base-input-rate="1.50" data-base-output-rate="7.50">
+                            data-model-id="gemini-3.8-flash" data-base-input-rate="1.50" data-base-output-rate="7.50">
                             <td class="px-6 py-4">
                                 <span
                                     class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.6 Flash</td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.8 Flash</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.50</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$7.50</td>
                             <td
@@ -532,24 +536,24 @@
                             </td>
                         </tr>
 
-                        <!-- Gemini 3.5 Flash -->
+                        <!-- Gemini 3.7 Flash -->
                         <tr class="hover:bg-slate-50 transition-all" data-provider="Google"
-                            data-model-id="gemini-3.5-flash" data-base-input-rate="1.50" data-base-output-rate="9.00">
+                            data-model-id="gemini-3.7-flash" data-base-input-rate="1.50" data-base-output-rate="7.50">
                             <td class="px-6 py-4">
                                 <span
                                     class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
                                     Google
                                 </span>
                             </td>
-                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.5 Flash</td>
+                            <td class="px-6 py-4 font-semibold text-slate-900 text-sm">Gemini 3.7 Flash</td>
                             <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-in-cell">$1.50</td>
-                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$9.00</td>
+                            <td class="px-6 py-4 text-right text-sm font-medium text-slate-600 rate-out-cell">$7.50</td>
                             <td
                                 class="px-6 py-4 text-right font-bold text-slate-900 text-sm total-cost-cell bg-slate-50/50">
                                 $0.00</td>
                             <td class="px-6 py-4 text-xs text-slate-500 max-w-xs">
-                                Inteligencia multimodal de alta eficiencia con rendimiento cercano a Pro. Altamente
-                                optimizado para bucles de agentes de software en paralelo.
+                                Balancear velocidad de respuesta, ventana de contexto masiva (1M de tokens)
+                                y bajo coste por token frente a modelos más pesados.
                             </td>
                         </tr>
 
@@ -963,28 +967,28 @@
                             <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0775</td>
                         </tr>
 
-                        <!-- Gemini 3.6 Flash -->
+                        <!-- Gemini 3.8 Flash -->
                         <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
                             <td class="px-5 py-3.5">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
                             </td>
-                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.6 Flash</td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.0</span> <span class="text-xs text-slate-400 block">[152.3 – 155.9]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.1</span> <span class="text-xs text-slate-400 block">[147.8 – 156.5]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">153.2</span> <span class="text-xs text-slate-400 block">[151.4 – 154.8]</span></td>
-                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0487</td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.8 Flash</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800"></span> <span class="text-xs text-slate-400 block">[ – ]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800"></span> <span class="text-xs text-slate-400 block">[ – ]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800"></span> <span class="text-xs text-slate-400 block">[ – ]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$ --- </td>
                         </tr>
 
-                        <!-- Gemini 3.5 Flash -->
+                        <!-- Gemini 3.7 Flash -->
                         <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
                             <td class="px-5 py-3.5">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
                             </td>
-                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.5 Flash</td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">154.6</span> <span class="text-xs text-slate-400 block">[152.6 – 156.6]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">152.2</span> <span class="text-xs text-slate-400 block">[150.3 – 154.2]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">153.2</span> <span class="text-xs text-slate-400 block">[151.8 – 154.7]</span></td>
-                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0582</td>
+                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.7 Flash</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">157.3</span> <span class="text-xs text-slate-400 block">[155.3 – 159.9]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">159.0</span> <span class="text-xs text-slate-400 block">[156.7 – 161.6]</span></td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">156.3</span> <span class="text-xs text-slate-400 block">[154.3 – 158.3]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0477</td>
                         </tr>
 
                         <!-- Gemini 3.5 Flash-Lite -->
@@ -993,10 +997,10 @@
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
                             </td>
                             <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 3.5 Flash-Lite</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">145.1</span> <span class="text-xs text-slate-400 block">[142.5 – 146.7]</span></td>
                             <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-right font-mono text-slate-400">N/D</td>
+                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.3</span> <span class="text-xs text-slate-400 block">[142.4 – 145.8]</span></td>
+                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0172</td>
                         </tr>
 
                         <!-- Gemini 3.1 Flash-Lite -->
@@ -1021,30 +1025,6 @@
                             <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">145.2</span> <span class="text-xs text-slate-400 block">[142.2 – 147.1]</span></td>
                             <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.6</span> <span class="text-xs text-slate-400 block">[141.5 – 146.1]</span></td>
                             <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0686</td>
-                        </tr>
-
-                        <!-- Gemini 2.5 Pro (Mar 2025) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
-                            <td class="px-5 py-3.5">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
-                            </td>
-                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(Mar 2025)</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">144.5</span> <span class="text-xs text-slate-400 block">[142.6 – 147.2]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0692</td>
-                        </tr>
-
-                        <!-- Gemini 2.5 Pro (May 2025) -->
-                        <tr class="hover:bg-slate-50 transition-all" data-provider="Google">
-                            <td class="px-5 py-3.5">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">Google</span>
-                            </td>
-                            <td class="px-5 py-3.5 font-semibold text-slate-900">Gemini 2.5 Pro <span class="text-[10px] text-slate-400 font-normal">(May 2025)</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="font-bold text-slate-800">142.7</span> <span class="text-xs text-slate-400 block">[139.5 – 145.5]</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-center"><span class="text-slate-400 font-medium">N/D</span></td>
-                            <td class="px-5 py-3.5 text-right font-mono font-bold text-indigo-600 bg-indigo-50/30">$0.0701</td>
                         </tr>
                     </tbody>
                 </table>
