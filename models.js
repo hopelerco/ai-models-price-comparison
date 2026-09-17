@@ -27,6 +27,26 @@ const PROVIDER_BADGES = {
 const MODELS_DATA = [
     // --- Anthropic ---
     {
+        id: "claude-fable-5.1",
+        name: "Claude Fable 5.1",
+        provider: "Anthropic",
+        rates: {
+            input: 10.00,
+            output: 50.00,
+            contextLimit: null,
+            contextPenalty: null
+        },
+        eci: {
+            general: 164.47,
+            generalCi: [161.36, 168.28],
+            swe: 167.44,
+            sweCi: [161.95, 178.53],
+            math: 165.73,
+            mathCi: [162.84, 175.91]
+        },
+        useCase: "Razonamiento complejo y el trabajo agéntico de largo horizonte."
+    },
+    {
         id: "claude-fable-5",
         name: "Claude Fable 5",
         provider: "Anthropic",
@@ -148,6 +168,54 @@ const MODELS_DATA = [
     },
 
     // --- OpenAI ---
+    {
+        id: "gpt-6-astra",
+        name: "GPT-6 Astra",
+        provider: "OpenAI",
+        rates: {
+            input: 10.00,
+            output: 50.00,
+            contextLimit: 272000,
+            contextPenalty: {
+                type: "multiplier",
+                inputMultiplier: 2,
+                outputMultiplier: 1.5
+            }
+        },
+        eci: {
+            general: 166.31,
+            generalCi: [163, 171.88],
+            swe: 163.58,
+            sweCi: [160.42, 169.82],
+            math: 169.83,
+            mathCi: [165.98, 175.37]
+        },
+        useCase: "Ejecutar tareas digitales de forma autónoma mediante el control directo del ordenador y flujos de trabajo profesionales muy complejos."
+    },
+    {
+        id: "gpt-5.6-sol",
+        name: "GPT-5.6 Sol",
+        provider: "OpenAI",
+        rates: {
+            input: 5.00,
+            output: 30.00,
+            contextLimit: 272000,
+            contextPenalty: {
+                type: "multiplier",
+                inputMultiplier: 2,
+                outputMultiplier: 1.5
+            }
+        },
+        eci: {
+            general: 161.7,
+            generalCi: [159.1, 164.8],
+            swe: 161.3,
+            sweCi: [158.5, 164.9],
+            math: 161.8,
+            mathCi: [159.0, 165.4]
+        },
+        useCase: "Flagship de frontera con razonamiento superior y ejecución de agentes autónomos multinivel en entornos complejos de Codex."
+    },
     {
         id: "gpt-5.6-sol",
         name: "GPT-5.6 Sol",
@@ -273,14 +341,14 @@ const MODELS_DATA = [
             contextPenalty: null
         },
         eci: {
-            general: null,
-            generalCi: null,
+            general: 156.54,
+            generalCi: [154.58, 161.97],
             swe: null,
             sweCi: null,
-            math: null,
-            mathCi: null
+            math: 154.75,
+            mathCi: [152.88, 156.92]
         },
-        useCase: "Inteligencia multimodal de alta velocidad y token-eficiente para bucles agénticos paralelos y generación de código en tiempo real."
+        useCase: "Ingeniería de software a largo plazo, los agentes autónomos de IA y los flujos de trabajo empresariales complejos con alta velocidad y bajo costo."
     },
     {
         id: "gemini-3.7-flash",
